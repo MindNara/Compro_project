@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*  font-family: 'Prompt', sans-serif;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+    background: linear-gradient(180deg, #2e1e85, #641ec8, #2995c5 80%);
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.icon {
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 10px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #fff;
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px; 
+    text-decoration: none;
+}
+
+.menu ul {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 30px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.4s ease-in-out;
+    border-radius: 20px;
+    padding: 6px 15px;
+}
+
+.menu ul li a:hover {
+    color: #3e097a;
+    background-color: #fff;
+}
+
+section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 880px; 
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to top, #250946, transparent);
+    z-index: 1000;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section img#moon, img#moonlight, img#stone-light {
+    mix-blend-mode: screen;
+}
+
+#text {
+    position: absolute;
+    color: #fff;
+    font-family: 'Prompt', sans-serif;
+    font-size: 200px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    background: #250946;
+    font-family: 'Prompt', sans-serif;
+    color: #fff;
+    padding: 100px;
+}
+
+.content h2 {
+    font-size: 24px;
+}
+
+.content p {
+    font-size: 20px;
+}
