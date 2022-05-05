@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="icon">
+                <h1 class="logo">LOGO</a></h1>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <img src="bg.png" id="bg">
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="stone-left.png" id="stone-left">
+        <h1 id="text">PACMAN</h1>
+        <img src="stone-right.png" id="stone-right">
+        <img src="stone-light.png" id="stone-light">
+        <img src="stone-up.png" id="stone-up">
+        <img src="moonlight.png" id="moonlight">
+        <h2 id="text"></h2>
+    </section>
+
+    <div class="content">
+        <h2>Em Beihold - Numb Little Bug</h2>
+        <p>
+            I don’t feel a single thing <br>
+Have the pills done too much <br>
+Haven’t caught up with my friends in weeks <br>
+And now we’re outta touch <br>
+
+I’ve been driving in LA <br>
+And the world it feels too big <br>
+Like a floating ball that’s bound to break <br>
+Snap my psyche like a twig <br>
+
+And I just wanna see <br>
+If you feel the same as me <br>
+
+Do you ever get a little bit tired of life <br>
+Like you’re not really happy but you don’t wanna die <br>
+Like you’re hanging by a thread but you gotta survive cuz u gotta survive <br>
+
+Like your body’s in the room but you’re not really there <br>
+Like you have empathy inside but you don’t really care <br>
+Like your fresh outta love but it’s been in the air <br>
+Am I past repair <br>
+
+A little bit tired of tryin’ to care when I don’t <br>
+A little bit tired of quick repairs to cope <br>
+A little bit tired of sinkin’ <br>
+There’s water in my boat <br>
+I’m barely breathin’ <br>
+Tryna stay afloat <br>
+So I got these <br>
+Quick repairs to cope <br>
+Guess I’m just broken and broke <br>
+
+The prescriptions on its way <br>
+With a name I can’t pronounce <br>
+And the dose I gotta take <br>
+Boy I wish that I could count <br>
+
+Cuz I just wanna see <br>
+If this could make me happy <br>
+
+Do you ever get a little bit tired of life <br>
+Like you’re not really happy but you don’t wanna die <br>
+Like you’re hanging by a thread but you gotta survive cuz ya gotta survive <br>
+        </p>
+    </div>
+
+</body>
+
+<script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let text = document.getElementById('text');
+    let stoneup = document.getElementById('stone-up');
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        stoneup.style.top = value * -0.1 + 'px';
+        moon.style.top = value * 0.25 + 'px';
+        moonlight.style.top = value * 0.25 + 'px';
+        text.style.marginTop = value * 0.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+    })
+</script>
+
+</html>
