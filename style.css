@@ -19,7 +19,50 @@ header {
     height: 80px;
     font-family: 'Prompt', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
+   
+a {
+    text-decoration: none;
+    color: white;
+}
 
+a:hover {
+    text-decoration: none;
+    color: rgb(218, 241, 7);
+}
+
+#about {
+    padding-bottom: 10%;
+}
+
+#detail {
+    padding-bottom: 10%;
+}
+
+#source_code {
+    padding-bottom: 0%;
+}
+
+#footer {
+    background:rgb(247, 2, 2);
+    color:rgb(255, 255, 255);
+    padding:1em 0;
+    text-align:center;
+    font-size:.8em;
+    font-weight:700;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.main{
+    padding:1em;
+    background:rgb(59, 26, 26);
+    max-width:900px;
+    margin:auto;
+    font-size: 18px;
+    margin-bottom:2em;
+  }
 .icon {
     font-weight: 900;
     font-size: 20px;
@@ -33,6 +76,29 @@ header {
     margin-left: 50px;
     margin-top: 20px; 
     text-decoration: none;
+}
+
+.big_text {
+    font-family: 'Shizuru', cursive;
+    font-size: 60px;
+    position: relative;
+    text-align: center;
+    animation: duk-dik infinite;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.neonText {
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
 }
 
 .menu ul {
@@ -122,4 +188,17 @@ section img#moon, img#moonlight, img#stone-light {
 
 .content p {
     font-size: 20px;
+}
+@keyframes duk-dik {
+    0% {
+        transform: rotate(-3deg);
+        animation-timing-function: linear;
+    }
+    50% {
+        transform: rotate(3deg);
+        animation-timing-function: linear;
+    }
+    100% {
+        transform: rotate(-3deg);
+    }
 }
