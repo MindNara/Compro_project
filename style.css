@@ -35,11 +35,13 @@ a:hover {
 #about {
     padding-bottom: 10%;
     padding-left: 15%;
-    padding-right: 15%;
+    padding-right: 20%;
 }
 
 #source_code {
     padding-bottom: 0%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .footer {
